@@ -53087,7 +53087,7 @@ var countryArray= [
 
     let filteredCountries = countryArray.filter(function(item){
         
-        return item.currencies=== "USD";
+        return item.currencies && item.currencies.USD;
         });
   
         console.log(filteredCountries);
